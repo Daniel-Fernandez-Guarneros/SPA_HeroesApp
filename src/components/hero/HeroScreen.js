@@ -11,7 +11,7 @@ export const HeroScreen = () => {
   const hero = useMemo( () => getHeroById(heroeId), [ heroeId ]);
 
 
-  
+
   const handleReturn = () => {
     navigate( -1 );
   }
@@ -37,11 +37,11 @@ export const HeroScreen = () => {
         <img 
           src={ imagePath } 
           alt={ superhero }
-          className="img-thumbnail"
+          className="img-thumbnail animate__animated animate__fadeInLeft"
         />
       </div>
 
-      <div className="col-8 animate__animated animate__fadeIn">
+      <div className="col-8 animate__animated animate__fadeInRight">
         <h3>{ hero.superhero }</h3>
         <ul className="list-group list-group-flush">
           <li className="list-group-item"> <b>Alter ego:</b> { alter_ego } </li>
